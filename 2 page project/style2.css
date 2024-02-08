@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    max-width:900px;
+    height: 100%;  
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "sub title icon";
+}
+.blog{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "blog about"
+    "blog archives"
+    "blog Elsewhere"
+    "footer footer";
+    margin-top: 30px;
+    
+}
+.write{
+    grid-area: blog;
+}
+.about{
+    grid-area: about;
+}
+.archives{
+    grid-area: archives;
+}
+.footer{
+    grid-area: footer;
+}
+.Elsewhere{
+    grid-area: Elsewhere;
+}
+.archives a{
+    color: cornflowerblue;
+}
+.Elsewhere a{
+    color: cornflowerblue;
+}
+.write a{
+    color: cornflowerblue;
+}
+#sub{
+    color: lightslategray;
+    align-self: center;
+}
+.write{
+    padding: 20px;
+    box-sizing: border-box;
+}
+#box{
+    border: 1px solid black;
+}
+#name{
+    color: lightslategray;
+}
+ul,ol{
+    padding-left: 50px;
+}
+.aboutdes{
+    background-color: whitesmoke;
+    padding: 15px;
+}
+#cdpost{
+    border: 3px solid cornflowerblue;
+    border-radius: 30px;
+    padding: 7px;
+}
+#cdpost a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+#copost{
+    border: 3px solid lightslategray;
+    border-radius: 30px;
+    padding: 7px;
+}
+#copost a{
+    color:lightslategray;
+    text-decoration: none;
+}
+h2{
+    margin-bottom: 10px;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+figure{
+    justify-self: end;
+} 
+#title{
+    text-align: center;
+} */
+#sub{
+    grid-area: sub;
+    align-self: center;
+}
+#title{
+    grid-area: title;
+} 
